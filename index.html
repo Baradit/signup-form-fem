@@ -31,11 +31,47 @@
           <p class="right__tryit">
             <span>Try it free 7 days</span> then $20/mo. thereafter
           </p>
-          <form action="" class="form">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Password" />
+          <form action="" class="form" id="form">
+            <div class="form-control">
+              <input type="text" id="firstName" placeholder="First Name" />
+              <small class="error-text">First Name cannot be empty</small>
+              <img
+                class="error-icon"
+                src="/assets/images/icon-error.svg"
+                alt=""
+              />
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Last Name" id="lastName" />
+              <small class="error-text">Last Name cannot be empty</small>
+              <img
+                class="error-icon"
+                src="/assets/images/icon-error.svg"
+                alt=""
+              />
+            </div>
+            <div class="form-control">
+              <input type="email" placeholder="Email Address" / id="email">
+              <small class="error-text">Email cannot be empty</small>
+              <small class="error-pattern-text"
+                >Looks like this is not an email</small
+              >
+              <img
+                class="error-icon"
+                src="/assets/images/icon-error.svg"
+                alt=""
+              />
+            </div>
+            <div class="form-control">
+              <input type="password" placeholder="Password" / id="password">
+              <small class="error-text">Password Name cannot be empty</small>
+              <img
+                class="error-icon"
+                src="/assets/images/icon-error.svg"
+                alt=""
+              />
+            </div>
+
             <button type="submit">Claim your free trial</button>
             <small class="terms"
               >By clicking the button, you are agreeing to our
